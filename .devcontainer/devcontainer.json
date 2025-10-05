@@ -1,0 +1,12 @@
+{
+  "name": "ga2-7d210f",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.12" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["astral-sh.uv", "ms-python.python"]
+    }
+  },
+  "postCreateCommand": "bash -lc 'curl -LsSf https://astral.sh/uv/install.sh | sh && ~/.local/bin/uv pip install fastapi'"
+}
